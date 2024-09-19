@@ -72,7 +72,7 @@ class Book(models.Model):
     genre=models.ForeignKey(Genre,on_delete=models.SET_NULL,null=True)
     ratings=models.DecimalField(max_digits=3,decimal_places=2,default=0.00)
     
-    photo=models.ImageField(upload_to="authorphoto/",blank=True,null=True)
+    photo=models.ImageField(upload_to="bookpohoto/",blank=True,null=True)
     user=models.ForeignKey(User,on_delete=models.CASCADE)
     slug=models.SlugField(blank=True,null=True)
 
